@@ -1,6 +1,7 @@
 package com.lucena.user.infrastructure.repository;
 
-import com.lucena.springclass.infrastructure.entity.Endereco;
+
+import com.lucena.user.infrastructure.entity.Endereco;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
