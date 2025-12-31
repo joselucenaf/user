@@ -1,15 +1,13 @@
 package com.lucena.user.infrastructure.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity //Aponta que essa é uma tabela do BD
 @Table(name = "endereco") //Define o nome da tabela
 
