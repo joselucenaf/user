@@ -113,6 +113,7 @@ public class UsuarioService {
     }
 
     public TelefoneDTO cadastraTelefone(String token, TelefoneDTO dto){
+        //Remove os 7 primeiros caracteres do token para poder ser lido corretamente
         String email = jwtUtil.extrairEmailToken(token.substring(7));
         Usuario usuario = usuarioRepository.findByEmail(email).orElseThrow(
                 () -> new ResourceNotFoundException("Email não encontrado "+ email)
